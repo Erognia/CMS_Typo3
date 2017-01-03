@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-03T15:02:59Z" product-name="mris_catalogue">
+		<header/>
+		<body>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit">
+				<source>Produit</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.date_sortie">
+				<source>Date Sortie</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.prix">
+				<source>Prix</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.categorie">
+				<source>Categorie</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_produit.pointsdevente">
+				<source>Pointsdevente</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_categorie">
+				<source>Categorie</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_categorie.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_categorie.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_categorie.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_categorie.parent">
+				<source>Parent</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand">
+				<source>Marchand</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.site">
+				<source>Site</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.tel">
+				<source>Tel</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.adresse">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.cp">
+				<source>Cp</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_marchand.ville">
+				<source>Ville</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_caracteristique">
+				<source>Caracteristique</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_caracteristique.nom">
+				<source>Nom</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_valeurcaracteristique">
+				<source>Valeur Caracteristique</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_valeurcaracteristique.valeur">
+				<source>Valeur</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_valeurcaracteristique.produit">
+				<source>Produit</source>
+			</trans-unit>
+			<trans-unit id="tx_mriscatalogue_domain_model_valeurcaracteristique.caracteristique">
+				<source>Caracteristique</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
