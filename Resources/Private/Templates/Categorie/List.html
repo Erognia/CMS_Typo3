@@ -13,16 +13,16 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Categorie</h1>
+<h1>Catégories</h1>
 
-	<f:for each="{categories}" as="categorie">
-		<div>
-			<f:image image="{categorie.image}" height="20px" />
-			<f:link.action action="show" arguments="{categorie : categorie}"> {categorie.nom}</f:link.action>
-			{categorie.description}
-
-		</div>
-	</f:for>
+	<table>
+		<f:for each="{categories}" as="categorie">
+			<tr>
+				<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.nom}</f:link.action>&emsp;</td>
+				<td><f:image image="{categorie.image}" height="40px" /></td>
+			</tr>
+		</f:for>
+	</table>
 
 <f:link.action action="new">New Categorie</f:link.action>
 </f:section>

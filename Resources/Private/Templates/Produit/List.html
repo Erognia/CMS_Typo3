@@ -13,21 +13,20 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Listing for Produit</h1>
+<h1>Produits</h1>
 
 <f:flashMessages />
 
-<f:for each="{produits}" as="produit">
-		<div>
-			<f:image image="{produit.image}" height="75px" />
-			<f:link.action action="show" arguments="{produit : produit}"> {produit.nom}</f:link.action>&emsp;
-			{produit.prix} €<br />
-			{produit.description}<br />
-			Date de sortie :
-			{produit.dateSortie -> f:format.date()}
-		</div>
-		<br />
-	</f:for>
+
+	<table>
+		<f:for each="{produits}" as="produit">
+			<tr>
+				<td><f:link.action action="show" pageUid="{settings.descproduits}" arguments="{produit : produit}"> {produit.nom}</f:link.action>&emsp;</td>
+				<td><f:image image="{produit.image}" height="75px" />&emsp;</td>
+				<td>{produit.prix} €</td>
+			</tr>
+		</f:for>
+	</table>
 
 <f:link.action action="new">New Produit</f:link.action>
 </f:section>

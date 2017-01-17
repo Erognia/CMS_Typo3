@@ -13,10 +13,22 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Produit</h1>
+<h1>{produit.nom}</h1>
 
 <f:flashMessages />
-<f:render partial="Produit/Properties" arguments="{produit:produit}" />
+<div> 
+	<f:image image="{produit.image}" height="120px" />
+	prix : {produit.prix} €<br/>
+	{produit.description}
+</div>
+<br/>
+
+<f:for each="{marchands}" as="marchand">
+	[produit.{marchand.nom}]
+</f:for>
+
+<br/>
+
 <f:link.action action="list">Back to list</f:link.action><br />
 <f:link.action action="new">New Produit</f:link.action>
 </f:section>

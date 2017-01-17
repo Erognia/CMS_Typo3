@@ -13,10 +13,14 @@ in /Configuration/ExtensionBuilder/settings.yaml:
 Otherwise your changes will be overwritten the next time you save the extension in the extension builder
 
 <f:section name="main">
-<h1>Single View for Categorie</h1>
+<h1>{categorie.nom}</h1>
 
 <f:flashMessages />
-<f:render partial="Categorie/Properties" arguments="{categorie:categorie}" />
+<div> 
+	<f:image image="{categorie.image}" height="120px" /> <br/>
+	{categorie.description}
+</div>
+<br/>
 <f:link.action action="list">Back to list</f:link.action><br />
 <f:link.action action="new">New Categorie</f:link.action>
 </f:section>
