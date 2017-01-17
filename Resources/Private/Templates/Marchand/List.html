@@ -17,35 +17,13 @@ Otherwise your changes will be overwritten the next time you save the extension 
 
 <f:flashMessages />
 
-<table  class="tx_mriscatalogue" >
-	<tr>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.nom" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.site" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.email" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.tel" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.image" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.adresse" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.cp" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_marchand.ville" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
-
-	<f:for each="{marchands}" as="marchand">
-		<tr>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.nom}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.site}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.email}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.tel}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.image.originalResource.name}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.adresse}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.cp}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{marchand : marchand}"> {marchand.ville}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{marchand : marchand}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{marchand : marchand}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
+<f:for each="{marchands}" as="marchand">
+		<div>
+			<f:image image="{marchand.image}" height="75px" />
+			<f:link.action action="show" arguments="{marchand : marchand}"> {marchand.nom}</f:link.action><br />
+		</div>
+		<br />
+</f:for>
 
 <f:link.action action="new">New Marchand</f:link.action>
 </f:section>

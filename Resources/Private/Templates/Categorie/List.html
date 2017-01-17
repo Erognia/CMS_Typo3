@@ -15,27 +15,14 @@ Otherwise your changes will be overwritten the next time you save the extension 
 <f:section name="main">
 <h1>Listing for Categorie</h1>
 
-<f:flashMessages />
-
-<table  class="tx_mriscatalogue" >
-	<tr>
-		<th><f:translate key="tx_mriscatalogue_domain_model_categorie.nom" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_categorie.description" /></th>
-		<th><f:translate key="tx_mriscatalogue_domain_model_categorie.image" /></th>
-		<th> </th>
-		<th> </th>
-	</tr>
-
 	<f:for each="{categories}" as="categorie">
-		<tr>
-			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.nom}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.description}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.image.originalResource.name}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{categorie : categorie}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{categorie : categorie}">Delete</f:link.action></td>
-		</tr>
+		<div>
+			<f:image image="{categorie.image}" height="20px" />
+			<f:link.action action="show" arguments="{categorie : categorie}"> {categorie.nom}</f:link.action>
+			{categorie.description}
+
+		</div>
 	</f:for>
-</table>
 
 <f:link.action action="new">New Categorie</f:link.action>
 </f:section>
